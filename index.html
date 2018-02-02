@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en" class="theme-color-e83b35 theme-skin-light">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Jim Nguyen Portfolio Page</title>
+
+    <!-- Google Fonts -->
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Fredoka+One">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic,700,700italic,800,800italic">
+
+    <!-- Icon Fonts -->
+    <link rel="stylesheet" type="text/css" href="fonts/map-icons/css/map-icons.min.css">
+    <link rel="stylesheet" type="text/css" href="fonts/icomoon/style.css">
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+
+
+    <!-- Styles -->
+    <link rel="stylesheet" type="text/css" href="js/plugins/jquery.bxslider/jquery.bxslider.css">
+    <link rel="stylesheet" type="text/css" href="js/plugins/jquery.customscroll/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" type="text/css" href="js/plugins/jquery.mediaelement/mediaelementplayer.min.css">
+    <link rel="stylesheet" type="text/css" href="js/plugins/jquery.fancybox/jquery.fancybox.css">
+    <link rel="stylesheet" type="text/css" href="js/plugins/jquery.owlcarousel/owl.carousel.css">
+    <link rel="stylesheet" type="text/css" href="js/plugins/jquery.owlcarousel/owl.theme.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="colors/red.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Modernizer for detect what features the user’s browser has to offer -->
+    <script type="text/javascript" src="js/libs/modernizr.js"></script>
+</head>
+
+<body class="home header-has-img loading">
+
+    <div class="mobile-nav">
+        <button class="btn-mobile mobile-nav-close"><i class="rsicon rsicon-close"></i></button>
+    
+        <div class="mobile-nav-inner">
+            <nav id="mobile-nav" class="nav">
+                <ul class="clearfix">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#contact">Contact <span></span></a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <!-- .mobile-nav -->
+    
+    <div class="sidebar sidebar-fixed">
+        <button class="btn-sidebar btn-sidebar-close"><i class="rsicon rsicon-close"></i></button>
+    
+        <div class="widget-area">
+            <aside class="widget widget-profile">
+                <div class="profile-photo">
+                    <img src="img/uploads/widgetprofilepic.jpg" alt="Jim Nguyen"/>
+                </div>
+                <div class="profile-info">
+                    <h2 class="profile-title">Jim Nguyen</h2>
+    
+                    <h3 class="profile-position">Full Stack Web Developer</h3>
+                </div>
+            </aside>
+            <!-- .widget-profile -->
+    
+            <aside class="widget widget_search">
+                <h2 class="widget-title">Search</h2>
+    
+                <form class="search-form">
+                    <label class="ripple">
+                        <span class="screen-reader-text">Search for:</span>
+                        <input class="search-field" type="search" placeholder="Search">
+                    </label>
+                    <input type="submit" class="search-submit" value="Search">
+                </form>
+            </aside>
+            <!-- .widget_search -->
+    
+            <aside class="widget widget_contact">
+                <h2 class="widget-title">Contact Me</h2>
+    
+                <form class="rsForm" action="php/mailsender.php" method="post">
+                    <div class="input-field">
+                        <label>Name</label>
+                        <input type="text" name="rsName" value="">
+                        <span class="line"></span>
+                    </div>
+    
+                    <div class="input-field">
+                        <label>Email</label>
+                        <input type="email" name="rsEmail" value="">
+                        <span class="line"></span>
+                    </div>
+    
+                    <div class="input-field">
+                        <label>Subject</label>
+                        <input type="text" name="rsSubject" value="">
+                        <span class="line"></span>
+                    </div>
+    
+                    <div class="input-field">
+                        <label>Message</label>
+                        <textarea rows="4" name="rsMessage"></textarea>
+                        <span class="line"></span>
+                    </div>
+    
+                    <span class="btn-outer btn-primary-outer ripple">
+                        <input class="rsFormSubmit btn btn-lg btn-primary" type="submit" value="Send">
+                    </span>
+                </form>
+            </aside>
+            <!-- .widget_contact -->
+        </div>
+        <!-- .widget-area -->
+    </div>
+    <!-- .sidebar -->
+
+    <div class="wrapper">
+        <header class="header">
+            <div class="head-bg" style="background-image: url('img/uploads/background.jpeg')"></div>
+        
+            <div class="head-bar">
+                <div class="head-bar-inner">
+                    <div class="row">
+                        <div class="col-sm-3 col-xs-6">
+                            <a class="logo" href="index.html"><span>Jim</span>Nguyen</a>
+                            <!-- <a class="head-logo" href=""><img src="img/rs-logo.png" alt="RScard"/></a> -->
+                        </div>
+        
+                        <div class="col-sm-9 col-xs-6">
+                            <div class="nav-wrap">
+                                <nav id="nav" class="nav">
+                                    <ul class="clearfix">
+                                        <li><a href="#about">About</a></li>
+                                        <li><a href="#skills">Skills</a></li>
+                                        <li><a href="#portfolio">Portfolio</a></li>
+                                        <li><a href="#experience">Experience</a></li>
+                                        <li><a href="#contact">Contact <span></span></a></li>
+                                    </ul>
+                                </nav>
+        
+                                <button class="btn-mobile btn-mobile-nav">Menu</button>
+                                <button class="btn-sidebar btn-sidebar-open"><i class="rsicon rsicon-menu"></i></button>
+                            </div>
+                            <!-- .nav-wrap -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- .header -->
+        
+        <div class="content">
+            <div class="container">
+    
+            <!-- START: PAGE CONTENT -->
+            <section id="about" class="section section-about">
+                <div class="animate-up">
+                    <div class="section-box">
+                        <div class="profile">
+                            <div class="row">
+                                <div class="col-xs-5">
+                                    <div class="profile-photo"><img src="img/uploads/profilepic.jpg" alt="Jim Nguyen"/></div>
+                                </div>
+                                <div class="col-xs-7">
+                                    <div class="profile-info">
+                                        <div class="profile-preword"><span>Hello</span></div>
+                                        <h1 class="profile-title"><span>I'm</span> Jim Nguyen</h1>
+            
+                                        <h2 class="profile-position">Full Stack Web Developer</h2></div>
+                                    <ul class="profile-list">
+                                        <li class="clearfix">
+                                            <strong class="title">Location</strong>
+                                            <span class="cont">Ontario, CA</span>
+                                        </li>
+                                        <li class="clearfix">
+                                            <strong class="title">E-mail</strong>
+                                            <span class="cont"><a href="mailto:jim.nguyen03@gmail.com">jim.nguyen03@gmail.com</a></span>
+                                        </li>
+                                        <li class="clearfix">
+                                            <strong class="title">Phone</strong>
+                                            <span class="cont"><a href="tel:9099575595">(909) 957-5595</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="profile-social">
+                            <ul class="social">
+                              <li><a class="ripple-centered" href="malto:jim.nguyen03@gmail.com" target="_blank"><i
+                                        class="rsicon rsicon-email"></i></a></li>
+                                <li><a class="ripple-centered" href="https://www.linkedin.com/in/jnguyen03/" target="_blank"><i
+                                        class="rsicon rsicon-linkedin"></i></a></li>
+                                <li><a class="ripple-centered" href="https://www.github.com/jnguyen03" target="_blank"><i
+                                        class="rsicon rsicon-github"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+            
+                    <div class="section-txt-btn">
+                        <p><a class="btn btn-lg btn-border ripple" target="_blank"
+                              href="https://drive.google.com/open?id=1c7wRgeDHxjsKisaYjUye6f77q-njIQAs">View Resume</a></p>
+            
+                        <p>Hello! I'm Jim Nguyen. A Full Stack Web Developer from Southern California. I am well-versed with numerous programming languages and frameworks including JavaScript, PostgresQL, and React. I have a strong background in customer relations and marketing.</p>
+                    </div>
+                </div>
+            </section>
+            <!-- #about -->
+            
+            <section id="skills" class="section section-skills">
+                <div class="animate-up">
+                    <h2 class="section-title">Professional Skills</h2>
+            
+                    <div class="section-box">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="progress-bar">
+                                    <div class="bar-data">
+                                        <span class="bar-title">Management</span>
+                                        <span class="bar-value">90%</span>
+                                    </div>
+                                    <div class="bar-line">
+                                        <span class="bar-fill" data-width="90%"></span>
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <div class="col-sm-6">
+                                <div class="progress-bar">
+                                    <div class="bar-data">
+                                        <span class="bar-title">JavaScript</span>
+                                        <span class="bar-value">80%</span>
+                                    </div>
+                                    <div class="bar-line">
+                                        <span class="bar-fill" data-width="80%"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="progress-bar">
+                                    <div class="bar-data">
+                                        <span class="bar-title">React</span>
+                                        <span class="bar-value">60%</span>
+                                    </div>
+                                    <div class="bar-line">
+                                        <span class="bar-fill" data-width="60%"></span>
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <div class="col-sm-6">
+                                <div class="progress-bar">
+                                    <div class="bar-data">
+                                        <span class="bar-title">HTML & CSS</span>
+                                        <span class="bar-value">75%</span>
+                                    </div>
+                                    <div class="bar-line">
+                                        <span class="bar-fill" data-width="75%"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="progress-bar">
+                                    <div class="bar-data">
+                                        <span class="bar-title">NodeJS & PostgresQL</span>
+                                        <span class="bar-value">70%</span>
+                                    </div>
+                                    <div class="bar-line">
+                                        <span class="bar-fill" data-width="70%"></span>
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <div class="col-sm-6">
+                                <div class="progress-bar">
+                                    <div class="bar-data">
+                                        <span class="bar-title">Photoshop</span>
+                                        <span class="bar-value">80%</span>
+                                    </div>
+                                    <div class="bar-line">
+                                        <span class="bar-fill" data-width="80%"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- #skills -->
+            
+            <section id="portfolio" class="section section-portfolio">
+            <div class="animate-up">
+            <h2 class="section-title">Portfolio</h2>
+            
+            <div class="filter">
+                <div class="filter-inner">
+                    <div class="filter-btn-group">
+                        <button data-filter="*">All</button>
+                        <button data-filter=".full-stack">Full Stack</button>
+                        <button data-filter=".frontend">Frontend</button>
+                    </div>
+                    <div class="filter-bar">
+                        <span class="filter-bar-line"></span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="grid">
+                <div class="grid-sizer"></div>
+            
+                <div class="grid-item size22 full-stack">
+                    <div class="grid-box">
+                        <figure class="portfolio-figure">
+                            <img src="img/uploads/smartbrain.png" alt=""/>
+                            <figcaption class="portfolio-caption">
+                                <div class="portfolio-caption-inner">
+                                    <h3 class="portfolio-title">Facial Recognition App</h3>
+                                    <h4 class="portfolio-cat">Full Stack Application</h4>
+            
+                                    <div class="btn-group">
+                                        <a class="btn-link" href="http://smartbrainapp.herokuapp.com" target="_blank"><i
+                                                class="rsicon rsicon-link"></i></a>
+                                    </div>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <!-- .grid-item -->
+            
+                <div class="grid-item size11 frontend">
+                    <div class="grid-box">
+                        <figure class="portfolio-figure">
+                            <img src="img/uploads/robofriends.png" alt=""/>
+                            <figcaption class="portfolio-caption">
+                                <div class="portfolio-caption-inner">
+                                    <h3 class="portfolio-title">Robofriends</h3>
+                                    <h4 class="portfolio-cat">Frontend React Application</h4>
+            
+                                    <div class="btn-group">
+                                        <a class="btn-link" href="http://robofriends.surge.sh" target="_blank"><i
+                                                class="rsicon rsicon-link"></i></a>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <!-- .grid-item -->
+            
+                <div class="grid-item size11 nature frontend">
+                    <div class="grid-box">
+                        <figure class="portfolio-figure">
+                            <img src="img/uploads/pataclone.jpg" alt=""/>
+                            <figcaption class="portfolio-caption">
+                                <div class="portfolio-caption-inner">
+                                    <h3 class="portfolio-title">Patatap Clone</h3>
+                                    <h4 class="portfolio-cat">Frontend JavaScript Application</h4>
+            
+                                    <div class="btn-group">
+                                        <a class="btn-link" href="http://pataclone.surge.sh" target="_blank"><i
+                                                class="rsicon rsicon-link"></i></a>
+                                    </div>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <!-- .grid-item -->
+            </div>
+            
+            </div>
+            </section>
+            <!-- #portfolio -->
+            
+            <section id="experience" class="section section-experience">
+                <div class="animate-up">
+                    <h2 class="section-title">Work Experience</h2>
+            
+                    <div class="timeline">
+                        <div class="timeline-bar"></div>
+                        <div class="timeline-inner clearfix">
+                            <div class="timeline-box timeline-box-left">
+                                <span class="dot"></span>
+            
+                                <div class="timeline-box-inner animate-right">
+                                    <span class="arrow"></span>
+            
+                                    <div class="date">2016 - Present</div>
+                                    <a href="http://www.tonandcompany.com">
+                                      <img class="company-logo" src="img/uploads/tonandcompany.png"/>
+                                    </a>
+                                    <h4>Accounts Manager</h4>
+            
+                                    <p>Maximized sales by personally managing accounts systematically and logically. Succeeded at expanding network connections and presention products to new clients. </p>
+                                </div>
+                            </div>
+            
+                            <div class="timeline-box timeline-box-right">
+                                <span class="dot"></span>
+            
+                                <div class="timeline-box-inner animate-left">
+                                    <span class="arrow"></span>
+            
+                                    <div class="date">2011 - 2014</div>
+                                    <a href="http://www.bluefinancialgroup.com">
+                                      <img class="company-logo" src="img/uploads/bluefinancialgroup.png"/>
+                                    </a>
+                                    <h4>Transaction Coordinator</h4>
+            
+                                    <p>Responsible for quality assurance of purchase or sale transaction documents from beginning to close of escrow. Established and maintained positive communication between all parties involved with transaction.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- #experience -->
+            
+            <section id="education" class="section section-education">
+                <div class="animate-up">
+                    <h2 class="section-title">Education</h2>
+            
+                    <div class="timeline">
+                        <div class="timeline-bar"></div>
+                        <div class="timeline-inner clearfix">
+            
+                            <div class="timeline-box timeline-box-compact timeline-box-left">
+                                <span class="dot"></span>
+            
+                                <div class="timeline-box-inner animate-right">
+                                    <span class="arrow"></span>
+            
+                                    <div class="date"><span>2017 - 2018</span></div>
+                                    <h3>The Complete Web Developer in 2018: Zero to Mastery</h3>
+                                    <h4><a href="http://ude.my/UC-A0N1M9Q4" target="_blank">Udemy Certificate</a></h4>
+                                </div>
+                            </div>
+            
+                            <div class="timeline-box timeline-box-compact timeline-box-right">
+                                <span class="dot"></span>
+            
+                                <div class="timeline-box-inner animate-left">
+                                    <span class="arrow"></span>
+            
+                                    <div class="date"><span>2010 - 2014</span></div>
+                                    <h3>Bachelor of Arts, Business Administration</h3>
+                                    <h4>California State University, Fullerton</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- #education -->
+            
+            <section id="clients" class="section section-clients">
+                <div class="animate-up">
+            
+                    <div class="clients-carousel">
+                        <div class="client-logo">
+                            <a href="https://reactjs.org" target="_blank"><img
+                                    src="img/uploads/logos/logo-react.png" title="react" alt="react"/></a>
+                        </div>
+            
+                        <div class="client-logo">
+                            <a href="https://ecmascript.org" target="_blank"><img src="img/uploads/logos/logo-javascript.png"
+                                                                                 title="javascript" alt="javascript"/></a>
+                        </div>
+
+                         <div class="client-logo">
+                            <a href="https://nodejs.org" target="_blank"><img src="img/uploads/logos/logo-node.png"
+                                                                                 title="nodejs" alt="nodejs"/></a>
+                        </div>
+
+                         <div class="client-logo">
+                            <a href="https://postgresql.org" target="_blank"><img src="img/uploads/logos/logo-postgresql.png"
+                                                                                 title="postgresql" alt="postgresql"/></a>
+                        </div>
+            
+                        <div class="client-logo">
+                            <a href="http://getbootstrap.com" target="_blank"><img src="img/uploads/logos/logo-bootstrap.png"
+                                                                                   title="bootstrap" alt="bootstrap"/></a>
+                        </div>
+            
+                        <div class="client-logo">
+                            <a href="https://jquery.com" target="_blank"><img src="img/uploads/logos/logo-jquery.png" title="jquery"
+                                                                              alt="jquery"/></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- #clients -->
+            
+            <section id="interests" class="section section-interests">
+                <div class="animate-up">
+                    <h2 class="section-title">My Interests</h2>
+            
+                    <div class="section-box">
+                        <p>I have a strong passion for technology and am constantly learning new things everyday. With the pace that technology is moving it is impossible for one person to know everything and that is one of the many things that I love about the industry. Outside of technology I love sports, especially basketball, as well as health and fitness.</p>
+            
+                        <ul class="interests-list">
+                            <li>
+                                <i class="fas fa-basketball-ball"></i>
+                                <span>Basketball</span>
+                            </li>
+                            <li>
+                                <i class="map-icon map-icon-gym"></i>
+                                <span>Fitness</span>
+                            </li>
+                            <li>
+                                <i class="map-icon map-icon-health"></i>
+                                <span>Staying Healthy</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-laptop"></i>
+                                <span>Technology</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-gamepad"></i>
+                                <span>Video Games</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-book"></i>
+                                <span>Reading</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-graduation-cap"></i>
+                                <span>Learning</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <!-- #interests -->
+            
+            <!-- <section id="calendar" class="section section-calendar">
+                <div class="animate-up">
+                    <h2 class="section-title">Availability Calendar</h2>
+            
+                    <div id="busyCalendar" class="calendar-busy">
+                        <div class="calendar-today" style="background-image: url('img/uploads/rs-calendar-cover.jpg')">
+                            <div class="valign-outer">
+                                <div class="valign-middle">
+                                    <div class="valign-inner">
+                                        <div class="date">
+                                            <span class="day"></span>
+                                            <span class="month"></span>
+                                        </div>
+                                        <div class="week-day"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <div class="calendar-cont">
+                            <div class="calendar-header">
+                                <div class="calendar-nav">
+                                    <span class="active-date"><span class="active-month"></span><span
+                                            class="active-year"></span></span>
+                                    <a class="calendar-prev ripple-centered" title="Prev"><i class="rsicon rsicon-chevron_left"></i></a>
+                                    <a class="calendar-next ripple-centered" title="Next"><i
+                                            class="rsicon rsicon-chevron_right"></i></a>
+                                </div>
+                            </div>
+            
+                            <table class="calendar-body">
+                                <thead class="calendar-thead"></thead>
+                                <tbody class="calendar-tbody"></tbody>
+                            </table>
+                            <div class="calendar-busy-note">Sorry. I'm not available on those days</div>
+                        </div>
+                    </div>
+                </div>
+            </section> -->
+            <!-- #calendar -->
+            
+            <section id="contact" class="section section-contact">
+                <div class="animate-up">
+                    <h2 class="section-title">Contact Me</h2>
+            
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="section-box contact-form">
+                                <h3>Feel free to contact me</h3>
+            
+                                <form class="rsForm" action="php/mailsender.php" method="post">
+                                    <div class="input-field">
+                                        <label>Name</label>
+                                        <input type="text" name="rsName" value="">
+                                        <span class="line"></span>
+                                    </div>
+            
+                                    <div class="input-field">
+                                        <label>Email</label>
+                                        <input type="email" name="rsEmail" value="">
+                                        <span class="line"></span>
+                                    </div>
+            
+                                    <div class="input-field">
+                                        <label>Subject</label>
+                                        <input type="text" name="rsSubject" value="">
+                                        <span class="line"></span>
+                                    </div>
+            
+                                    <div class="input-field">
+                                        <label>Message</label>
+                                        <textarea rows="4" name="rsMessage"></textarea>
+                                        <span class="line"></span>
+                                    </div>
+            
+                                    <span class="btn-outer btn-primary-outer ripple">
+                                        <input class="rsFormSubmit btn btn-lg btn-primary" type="submit" value="Send">
+                                    </span>
+                                </form>
+                            </div>
+                        </div>
+            
+                        <div class="col-sm-6">
+                            <div class="section-box contact-info has-map">
+                                <ul class="contact-list">
+                                    <li class="clearfix">
+                                        <strong>Address</strong>
+                                        <span>Ontario, CA</span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <strong>phone</strong>
+                                        <span><a href="tel:+12562548456">(909) 957-5595</a></span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <strong>E-mail</strong>
+                                        <span><a href="mailto:jim.nguyen03@gmail.com">jim.nguyen03@gmail.com</a></span>
+                                    </li>
+                                </ul>
+            
+                                <div id="map" data-latitude="34.000820" data-longitude="-117.575857"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- #contact -->
+            <!-- END: PAGE CONTENT -->
+    
+        </div>
+        <!-- .container -->
+    </div>
+    <!-- .content -->
+    
+    <footer class="footer">
+        <div class="footer-social">
+            <ul class="social">
+                <li><a class="ripple-centered" href="http://www.facebook.com/jimnguyen03" target="_blank"><i class="rsicon rsicon-facebook"></i></a></li>
+                <li><a class="ripple-centered" href="http://www.twitter.com/jnguyen03" target="_blank"><i class="rsicon rsicon-twitter"></i></a></li>
+                <li><a class="ripple-centered" href="http://www.linkedin.com/in/jnguyen03" target="_blank"><i class="rsicon rsicon-linkedin"></i></a></li>
+                <li><a class="ripple-centered" href="http://github.com/jnguyen03" target="_blank"><i class="rsicon rsicon-github"></i></a></li>
+                <li><a class="ripple-centered" href="http://www.instagram.com/jnguyen03" target="_blank"><i class="rsicon rsicon-instagram"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+    <!-- .footer -->
+	
+    </div>
+    <!-- .wrapper -->
+    
+    <a class="btn-scroll-top" href="#"><i class="rsicon rsicon-arrow-up"></i></a>
+    
+    <div id="overlay"></div>
+    <div id="preloader">
+        <div class="preload-icon"><span></span><span></span></div>
+        <div class="preload-text">Loading ...</div>
+    </div>
+    
+    <!-- Scripts -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+    <script type="text/javascript" src="fonts/map-icons/js/map-icons.min.js"></script>
+    <script type="text/javascript" src="js/plugins/jquery.mousewheel-3.0.6.pack.js"></script>
+    <script type="text/javascript" src="js/plugins/imagesloaded.pkgd.min.js"></script>
+    <script type="text/javascript" src="js/plugins/isotope.pkgd.min.js"></script>
+    <script type="text/javascript" src="js/plugins/jquery.appear.min.js"></script>
+    <script type="text/javascript" src="js/plugins/jquery.onepagenav.min.js"></script>
+    <script type="text/javascript" src="js/plugins/jquery.bxslider/jquery.bxslider.min.js"></script>
+    <script type="text/javascript" src="js/plugins/jquery.customscroll/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script type="text/javascript" src="js/plugins/jquery.mediaelement/mediaelement-and-player.min.js"></script>
+    <script type="text/javascript" src="js/plugins/jquery.fancybox/jquery.fancybox.pack.js"></script>
+    <script type="text/javascript" src="js/plugins/jquery.fancybox/helpers/jquery.fancybox-media.js"></script>
+    <script type="text/javascript" src="js/plugins/jquery.owlcarousel/owl.carousel.min.js"></script>
+	<script type="text/javascript" src="js/options.js"></script>
+    <script type="text/javascript" src="js/site.min.js"></script>
+</body>
+</html>
